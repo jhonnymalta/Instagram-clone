@@ -8,8 +8,7 @@
 }
 body{
     width: 100%;
-    min-height: 100vh;
-    background-color: rgb(243,243,243);
+    background-image: linear-gradient(85deg, #bde0ff 0, #0094f6 50%, #0051d5 100%);
     margin: 0;
     padding: 0;
     display: flex;
@@ -28,6 +27,12 @@ body{
     align-items:  center;
     width: 50%;
 }
+.instagram-phone img{
+    height: 800px;
+}
+#logo{
+    width: 80%;
+}
 .instagram-continue{
     display: flex;
     align-items: center;
@@ -35,6 +40,10 @@ body{
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 1rem 1rem 2rem .1rem  rgba(48, 48, 48,.8);
+    
 }
 .group{
     display: flex;
@@ -43,15 +52,15 @@ body{
     flex-direction: column;
     width: 100%;
     padding: 1.3rem;
-    border: 1px solid lightgrey;
+    
+   
+    
 }
 .group:nth-child(1){
     min-height: 19rem;
 
 }
-.instagram-logo{
-    height: 3rem;
-}
+
 .profile-photo{
     display: flex;
     justify-content: center;
@@ -62,8 +71,98 @@ body{
 }
 .profile-photo img{
     height: 20rem;
+    
 }
 .instagram-login{
     background-color:  #0095f6;
+    color: #fff;
+    padding: 8px;
+    margin-top: 18px;
+    border-radius: 4px;
     
+}
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+.not-account{
+    color: rgb(110, 110, 110);
+
+}
+.link-blue{
+    color: #0095f6;
+
+}
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1.3rem 0;
+   
+    
+}
+.get-app{
+    color: #0095f6; 
+}
+.download{
+    display: flex;
+    
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+   
+}
+
+
+
+.app-download-group{
+   
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+   
+}
+.app-download-group a{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.buttonapp{
+    width: 50%;
+}
+
+
+/* media queries*/
+@media (max-width:1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+@media (max-width:650px){
+    body{
+        
+        background-image: linear-gradient(85deg, #fff, #ffffff 100%);
+    }
+    .instagram-wrapper{
+        width: 100%;
+    }
+    .instagram-phone{
+        display: none;
+    }
+    .instagram-continue{
+        width: 100%;
+    }
+    .logo{
+        max-width: 40%;
+    }
+    .profile-photo img{
+        max-width: 240px;
+        max-height: 90%;
+        border-radius: 50%;
+    }
 }
